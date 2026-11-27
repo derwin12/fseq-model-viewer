@@ -12,6 +12,20 @@ node positions all match xLights.
 - Model groups are not listed.
 - Show folder, fseq, model and view are remembered between runs.
 
+## Running it
+
+Download the zip from the [Releases](https://github.com/derwin12/fseq-model-viewer/releases)
+page, unzip it anywhere, and run `FseqModelViewer.exe`. Keep these files together in one folder:
+
+- `FseqModelViewer.exe`
+- `avcodec-62.dll`, `avformat-62.dll`, `avutil-60.dll`, `avfilter-11.dll`,
+  `swscale-9.dll`, `swresample-6.dll`, `avdevice-62.dll` (FFmpeg)
+- `SDL2.dll`
+- `libcurl.dll`
+
+The Microsoft Visual C++ Redistributable (x64) must also be installed. Most PCs that have
+xLights already have it; if not, get it from https://aka.ms/vs/17/release/vc_redist.x64.exe.
+
 ## Build (Windows)
 
 1. Build the core library in the xLights repo (needed again whenever core headers change):
